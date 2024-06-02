@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>blog</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="../img/favicon.png" rel="icon">
+  <link href="../img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Bootstrap CSS File -->
+  <link href="../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="../lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="../lib/animate/animate.min.css" rel="stylesheet">
+  <link href="../lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="../lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="../lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="../css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <!--/ Nav Star /-->
+  <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll" href="../#blog">Back</a>
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
+        aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="navbar-collapse collapse justify-content-end" id="navbarDefault">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="../index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="../index.html#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="../index.html#blog">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="../index.html#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--/ Nav End /-->
+  <!--/ Intro Skew Star /-->
+  <div class="intro intro-single route bg-image">
+    <div class="overlay-mf">
+    <div class="intro-content display-table">
+      <div class="table-cell">
+        <div class="container">
+          <h2 class="intro-title mb-4">Blog Details</h2>
+          <ol class="breadcrumb d-flex justify-content-center">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--/ Intro Skew End /-->
+  <!--/ Section Blog-Single Star /-->
+  <section class="blog-wrapper sect-pt4" id="#blog">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="post-box">
+            <div class="post-thumb">
+              <img src="../img/blog-images/blog-1.jpg" class="img-fluid" alt="">
+            </div>
+            <div class="post-meta">
+              <h1 class="article-title">Top 5 common ways to improve API performance</h1>
+              <ul>
+                <li>
+                  <span class="ion-ios-person"></span>
+                  <a href="#">Admin</a>
+                </li>
+                <li>
+                  <span class="ion-pricetag"></span>
+                  <a href="#">API</a>
+                </li>
+              </ul>
+            </div>
+            <div class="post-thumb">
+              <img src="../img/blog-images/blog-1-gif.gif" class="img-fluid" alt="">
+            </div>
+            <div class="article-content">
+              <h3>Here are five common strategies to enhance API performance :</h3>
+              <p>
+                <b>Result Pagination :</b>
+                This method is used to optimize large result sets by streaming them back to the client, enhancing service responsiveness and user experience.
+              </p>
+              <p>
+                <b>Asynchronous Logging :</b>
+                This approach involves sending logs to a lock-free buffer and returning immediately, rather than dealing with the disk on every call. Logs are periodically flushed to the disk, significantly reducing I/O overhead.
+              </p>
+              <p>
+                <b>Data Caching :</b>
+                Frequently accessed data can be stored in a cache to speed up retrieval. Clients check the cache before querying the database, with data storage solutions like Redis offering faster access due to in-memory storage.
+              </p>
+              <p>
+                <b>Payload Compression :</b>
+                To reduce data transmission time, requests and responses can be compressed (e.g., using gzip), making the upload and download processes quicker.
+              </p>
+              <p>
+                <b>Connection Pooling :</b>
+                This technique involves using a pool of open connections to manage database interaction, which reduces the overhead associated with opening and closing connections each time data needs to be loaded. The pool manages the lifecycle of connections for efficient resource use.
+              </p>
+            </div>
+          </div>
+        </div> 
+        <div class="col-md-4">
+          <!-- <div class="widget-sidebar sidebar-search">
+            <h5 class="sidebar-title">Search</h5>
+            <div class="sidebar-content">
+              <form>
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Search for..." aria-label="Search for...">
+                  <span class="input-group-btn">
+                    <button class="btn btn-secondary btn-search" type="button">
+                      <span class="ion-android-search"></span>
+                    </button>
+                  </span>
+                </div>
+              </form>
+            </div>
+          </div> -->
+          <div class="widget-sidebar widget-tags">
+            <h5 class="sidebar-title">Tags</h5>
+            <div class="sidebar-content">
+              <ul>
+                <li>
+                  <a href="#">API</a>
+                </li>
+                <li>
+                  <a href="#">API Response</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--/ Section Blog-Single End /-->
+
+  <!--/ Section Contact-Footer Star /-->
+  <section class="paralax-mf footer-paralax bg-image sect-mt4 route">
+    <div class="overlay-mf"></div>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="copyright-box">
+              <p class="copyright">&copy; Copyright <strong>Madhan Kumar</strong>. All Rights Reserved</p>
+              <div class="credits">
+                <!--
+                  All the links in the footer should remain intact.
+                  You can delete the links only if you purchased the pro version.
+                  Licensing information: https://bootstrapmade.com/license/
+                  Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=DevFolio
+                -->
+                Designed by <a href="#">Madhan Kumar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </section>
+  <!--/ Section Contact-footer End /-->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+  <div id="preloader"></div>
+
+  <!-- JavaScript Libraries -->
+  <script src="../lib/jquery/jquery.min.js"></script>
+  <script src="../lib/jquery/jquery-migrate.min.js"></script>
+  <script src="../lib/popper/popper.min.js"></script>
+  <script src="../lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="../lib/easing/easing.min.js"></script>
+  <script src="../lib/counterup/jquery.waypoints.min.js"></script>
+  <script src="../lib/counterup/jquery.counterup.js"></script>
+  <script src="../lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="../lib/lightbox/js/lightbox.min.js"></script>
+  <script src="../lib/typed/typed.min.js"></script>
+  <!-- Contact Form JavaScript File -->
+  <script src="../contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="../js/main.js"></script>
+
+</body>
+</html>
