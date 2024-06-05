@@ -1,1 +1,1 @@
-Thanks for watching..!!!
+Thanks for watching.
