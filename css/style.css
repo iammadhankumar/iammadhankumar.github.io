@@ -93,6 +93,28 @@ a:hover {
   top: 0;
   left: 0px;
   padding: 0;
+  height: 50%;
+  width: 100%;
+  opacity: .7;
+}
+
+/* @media (min-width: 768px) {
+  .container {
+      max-width: 720px;
+  }
+} */
+
+.overlay-bottom-mf {
+  background-color: #0078ff;
+}
+
+
+
+.overlay-bottom-mf {
+  position: absolute;
+  top: 0;
+  left: 0px;
+  padding: 0;
   height: 100%;
   width: 100%;
   opacity: .7;
@@ -122,6 +144,7 @@ a:hover {
 
 .sect-pt4 {
   padding-top: 4rem;
+  margin-top: -210px; 
 }
 
 .sect-mt4 {
