@@ -98,11 +98,6 @@ a:hover {
   opacity: .7;
 }
 
-/* @media (min-width: 768px) {
-  .container {
-      max-width: 720px;
-  }
-} */
 
 .overlay-bottom-mf {
   background-color: #0078ff;
@@ -143,6 +138,10 @@ a:hover {
 }
 
 .sect-pt4 {
+  padding-top: 4rem;
+}
+
+.blog-sect-pt4 {
   padding-top: 4rem;
   margin-top: -210px; 
 }
