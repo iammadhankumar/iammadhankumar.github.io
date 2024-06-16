@@ -23,6 +23,32 @@
 
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
+
+  <style>
+    .intro {
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    }
+    .overlay-itro {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    .intro-content {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        text-align: center;
+        z-index: 2;
+    }
+</style>
 </head>
 
 <body id="page-top">
@@ -424,6 +450,27 @@
 
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
+
+    <!-- Background Image -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var images = [
+            'img/intro-bg.gif',
+            'img/intro-bg1.jpg',
+            'img/intro-bg2.jpg',
+            'img/intro-bg3.jpg'
+        ];
+        var currentIndex = 0;
+
+        function changeBackgroundImage() {
+            currentIndex = (currentIndex + 1) % images.length;
+            document.getElementById('home').style.backgroundImage = 'url(' + images[currentIndex] + ')';
+        }
+
+        // Change image every hour (120000 milliseconds)
+        setInterval(changeBackgroundImage, 120000);
+    });
+</script>
 
 </body>
 </html>
