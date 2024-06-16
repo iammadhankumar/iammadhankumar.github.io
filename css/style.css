@@ -93,7 +93,7 @@ a:hover {
   top: 0;
   left: 0px;
   padding: 0;
-  height: 50%;
+  height: 60%;
   width: 100%;
   opacity: .7;
 }
@@ -143,7 +143,7 @@ a:hover {
 
 .blog-sect-pt4 {
   padding-top: 4rem;
-  margin-top: -210px; 
+  margin-top: -110px; 
 }
 
 .sect-mt4 {
@@ -641,8 +641,9 @@ a:hover {
 
 .intro .intro-title {
   color: #fff;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 3rem;
+  margin-top: -120px;
 }
 
 .intro .intro-subtitle {
@@ -664,7 +665,7 @@ a:hover {
 
 .intro-single .intro-title {
   text-transform: uppercase;
-  font-size: 3rem;
+  font-size: 1rem;
 }
 
 .intro-single .breadcrumb {
@@ -682,6 +683,20 @@ a:hover {
 
 .intro-single .breadcrumb a {
   color: #fff;
+}
+
+.search-bar {
+  position: absolute;
+  bottom: 70px;
+  top: 60px
+}
+.highlight {
+  background-color: lightblue;
+}
+.btn-white {
+  background-color: white;
+  color: black;
+  border-color: white;
 }
 
 /*======================================

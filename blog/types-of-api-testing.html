@@ -36,6 +36,7 @@
         <span></span>
         <span></span>
       </button>
+
       <div class="navbar-collapse collapse justify-content-end" id="navbarDefault">
         <ul class="navbar-nav">
           <li class="nav-item">
@@ -62,6 +63,10 @@
       <div class="table-cell">
         <div class="container">
           <h2 class="intro-title mb-4">Blog Details</h2>
+          <form class="form-inline search-bar">
+            <input class="form-control mr-sm-2" type="search" id="searchInput" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0 btn-white" type="button" onclick="searchContent()">Search</button>
+          </form>
           <ol class="breadcrumb d-flex justify-content-center">
           </div>
         </div>
@@ -254,6 +259,9 @@
 
   <!-- Template Main Javascript File -->
   <script src="../js/main.js"></script>
+
+    <!-- Search blog Javascript File -->
+  <script src="../js/blog-search.js"></script>
 
 </body>
 </html>
