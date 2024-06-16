@@ -688,7 +688,7 @@ a:hover {
 .search-bar {
   position: absolute;
   bottom: 70px;
-  top: 60px
+  top: 60px;
 }
 .highlight {
   background-color: lightblue;
@@ -697,7 +697,14 @@ a:hover {
   background-color: white;
   color: black;
   border-color: white;
+  margin-left :5px;
 }
+
+/* search input */
+.form-control {
+  width : 50%;
+}
+
 
 /*======================================
 //--//-->   ABOUT
