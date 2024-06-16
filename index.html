@@ -460,7 +460,7 @@
             'img/intro-bg2.jpg',
             'img/intro-bg3.jpg'
         ];
-        var currentIndex = 0;
+        var currentIndex = localStorage.getItem('currentIndex') || 0;
 
         function changeBackgroundImage() {
             currentIndex = (currentIndex + 1) % images.length;
