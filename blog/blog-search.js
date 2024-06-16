@@ -1,35 +1,35 @@
 function searchContent() {
-    var input = document.getElementById('searchInput').value.toLowerCase();
-    var content = document.querySelector('.article-content');
-    var paragraphs = content.getElementsByTagName('p');
+  var input = document.getElementById('searchInput').value.toLowerCase();
+  var content = document.querySelector('.article-content');
+  var elements = content.querySelectorAll('p, h1, h2, h3, h4, h5, h6, li');
 
-    // Clear previous highlights
-    for (var i = 0; i < paragraphs.length; i++) {
-      paragraphs[i].innerHTML = paragraphs[i].innerText;
-    }
+  // Clear previous highlights
+  for (var i = 0; i < elements.length; i++) {
+    elements[i].innerHTML = elements[i].innerText;
+  }
 
-    if (!input) {
-      return;
-    }
+  if (!input) {
+    return;
+  }
 
-    // Search and highlight
-    var found = false;
-    for (var i = 0; i < paragraphs.length; i++) {
-      var paragraph = paragraphs[i];
-      var text = paragraph.innerText.toLowerCase();
-      if (text.includes(input)) {
-        var regex = new RegExp(input, 'gi');
-        paragraph.innerHTML = paragraph.innerText.replace(regex, function(match) {
-          return '<span class="highlight">' + match + '</span>';
-        });
-        if (!found) {
-          paragraph.scrollIntoView({ behavior: 'smooth', block: 'center' });
-          found = true;
-        }
+  // Search and highlight
+  var found = false;
+  for (var i = 0; i < elements.length; i++) {
+    var element = elements[i];
+    var text = element.innerText.toLowerCase();
+    if (text.includes(input)) {
+      var regex = new RegExp(input, 'gi');
+      element.innerHTML = element.innerText.replace(regex, function(match) {
+        return '<span class="highlight">' + match + '</span>';
+      });
+      if (!found) {
+        element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        found = true;
       }
     }
-
-    if (!found) {
-      alert('Content not found.');
-    }
   }
+
+  if (!found) {
+    alert('Content not found.');
+  }
+}
