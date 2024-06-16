@@ -1,7 +1,7 @@
 function searchContent() {
   var input = document.getElementById('searchInput').value.toLowerCase();
   var content = document.querySelector('.article-content');
-  var elements = content.querySelectorAll('p, h1, h2, h3, h4, h5, h6, li');
+  var elements = content.querySelectorAll('p, h1, h2, h3, h4, h5, h6, li, b');
 
   // Clear previous highlights
   for (var i = 0; i < elements.length; i++) {
