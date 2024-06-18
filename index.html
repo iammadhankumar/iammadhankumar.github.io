@@ -453,25 +453,31 @@
 
     <!-- Background Image -->
   <script>
-    document.addEventListener("DOMContentLoaded", function() {
-        var images = [
-            'img/intro-bg.gif',
-            'img/intro-bg1.jpg',
-            'img/intro-bg2.jpg',
-            'img/intro-bg3.jpg',
-            'img/intro-bg4.png',
-            'img/intro-bg5.jpg'
-        ];
-        var currentIndex = localStorage.getItem('currentIndex') || 0;
+   document.addEventListener("DOMContentLoaded", function() {
+    var images = [
+      'img/intro-bg.gif',
+      'img/intro-bg1.jpg',
+      'img/intro-bg2.jpg',
+      'img/intro-bg3.jpg',
+      'img/intro-bg4.jpg'
+    ];
+    
+    // Retrieve currentIndex from localStorage or set to 0 if not present
+    var currentIndex = localStorage.getItem('currentIndex') || 0;
+    
+    function changeBackgroundImage() {
+      // Increment currentIndex and loop back to 0 if it exceeds array length
+      currentIndex = (parseInt(currentIndex) + 1) % images.length;
+      localStorage.setItem('currentIndex', currentIndex); // Store currentIndex in localStorage
+      document.getElementById('home').style.backgroundImage = 'url(' + images[currentIndex] + ')';
+    }
 
-        function changeBackgroundImage() {
-            currentIndex = (currentIndex + 1) % images.length;
-            document.getElementById('home').style.backgroundImage = 'url(' + images[currentIndex] + ')';
-        }
+    // Change image every 10 seconds (10000 milliseconds)
+    setInterval(changeBackgroundImage, 10000);
 
-        // Change image every hour (10000 milliseconds)
-        setInterval(changeBackgroundImage, 10000);
-    });
+    // Initial background image setting
+    document.getElementById('home').style.backgroundImage = 'url(' + images[currentIndex] + ')';
+  });
 </script>
 
 </body>
