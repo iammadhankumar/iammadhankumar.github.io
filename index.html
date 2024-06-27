@@ -58,13 +58,13 @@
   <!--/ Nav End /-->
 
   <!--/ Intro Skew Star /-->
-  <div id="home" class="intro route bg-image" style="background-image: url(img/intro-bg.gif)">
+  <div id="home" class="intro route bg-image" style="background-image: url(img/intro-bg2.gif)">
     <div class="overlay-itro"></div>
     <div class="intro-content display-table">
       <div class="table-cell">
         <div class="container">
           <!--<p class="display-6 color-d">Hello, world!</p>-->
-          <h1 class="intro-title mb-4">I AM Madhan Kumar</h1>
+          <h1 class="intro-title mb-4">I am Madhan Kumar</h1>
           <p class="intro-subtitle"><span class="text-slider-items">Software Engineer, Full-Stack Developer, AI Explorer, Tech Enthusiast, Team Player, Blogger, Problem Solver, Learner</span><strong class="text-slider"></strong></p>
           <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
         </div>
@@ -424,35 +424,5 @@
 
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
-
-    <!-- Background Image -->
-  <script>
-   document.addEventListener("DOMContentLoaded", function() {
-    var images = [
-      'img/intro-bg.gif',
-      'img/intro-bg1.jpg',
-      'img/intro-bg2.jpg',
-      'img/intro-bg3.jpg',
-      'img/intro-bg4.jpg'
-    ];
-    
-    // Retrieve currentIndex from localStorage or set to 0 if not present
-    var currentIndex = localStorage.getItem('currentIndex') || 0;
-    
-    function changeBackgroundImage() {
-      // Increment currentIndex and loop back to 0 if it exceeds array length
-      currentIndex = (parseInt(currentIndex) + 1) % images.length;
-      localStorage.setItem('currentIndex', currentIndex); // Store currentIndex in localStorage
-      document.getElementById('home').style.backgroundImage = 'url(' + images[currentIndex] + ')';
-    }
-
-    // Change image every 10 seconds (3600000 milliseconds)
-    setInterval(changeBackgroundImage,  3600000);
-
-    // Initial background image setting
-    document.getElementById('home').style.backgroundImage = 'url(' + images[currentIndex] + ')';
-  });
-</script>
-
 </body>
 </html>
