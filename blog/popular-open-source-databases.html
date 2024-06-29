@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>blog</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="../img/favicon.png" rel="icon">
+  <link href="../img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Bootstrap CSS File -->
+  <link href="../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="../lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="../lib/animate/animate.min.css" rel="stylesheet">
+  <link href="../lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="../lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="../lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="../css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <!--/ Nav Star /-->
+  <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll" href="../#blog">Back</a>
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
+        aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="navbar-collapse collapse justify-content-end" id="navbarDefault">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="../">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="../#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="../#blog">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="../#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--/ Nav End /-->
+  <!--/ Intro Skew Star /-->
+  <div class="intro intro-single route bg-image">
+    <div class="overlay-mf">
+    <div class="intro-content display-table">
+      <div class="table-cell">
+        <div class="container">
+          <form class="form-inline search-bar">
+            <input class="form-control mr-sm-2" type="search" id="searchInput" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0 btn-white" type="button" onclick="searchContent()">Search</button>
+          </form>
+          <ol class="breadcrumb d-flex justify-content-center">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--/ Intro Skew End /-->
+  <!--/ Section Blog-Single Star /-->
+  <section class="blog-wrapper blog-sect-pt4" id="#blog">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="post-box">
+            <div class="post-thumb">
+              <img src="../img/blog-images/blog-5/blog-5.jpg" class="img-fluid" alt="">
+            </div>
+            <div class="post-meta">
+              <h1 class="article-title">Top 10 Popular Open-Source Databases</h1>
+              <ul>
+                <li>
+                  <span class="ion-ios-person"></span>
+                  <a href="../#about">Admin</a>
+                </li>
+                <li>
+                  <span class="ion-pricetag"></span>
+                  <a href="#">API</a>
+                </li>
+              </ul>
+            </div>
+            <div class="article-content">
+              <h3>Guide to open source databases :</h3>
+                <p>Here is an quick overview :</p>
+              <h5>MySQL :</h5>
+                <p>An open-source relational database management system (RDBMS) known for its speed and reliability. It’s widely used in web applications.</p>
+              <h5>PostgreSQL :</h5>
+                <p>Another open-source RDBMS known for its advanced features, including support for JSON, XML, and Geospatial data. It’s highly extensible and ACID-compliant.</p>
+              <h5>MariaDB :</h5>
+                <p>A fork of MySQL, developed by the original creators of MySQL. It aims to maintain compatibility while also adding new features and improvements.</p>
+              <h5>Apache Cassandra :</h5>
+                <p>A distributed NoSQL database designed for handling large amounts of data across many commodity servers, providing high availability with no single point of failure.</p>
+              <h5>Neo4j :</h5>
+                <p>A graph database management system, optimized for storing and querying graph data structures. It’s used for applications involving complex relationships, such as social networks and recommendation engines.</p>
+              <h5>SQLite :</h5>
+                <p>A self-contained, serverless, zero-configuration, transactional SQL database engine. It’s embedded into the end program and requires no separate server process.</p>
+              <h5>CockroachDB :</h5>
+                <p>A distributed SQL database built on a scalable and resilient architecture. It’s designed to survive and scale with minimal operational overhead.</p>
+              <h5>Redis :</h5>
+                <p>An in-memory data structure store used as a database, cache, and message broker. It supports various data structures like strings, hashes, lists, sets, and more.</p>
+              <h5>MongoDB :</h5>
+                <p>A NoSQL document-oriented database program, using JSON-like documents with optional schemas. It’s known for its flexibility and scalability, especially for applications with rapidly changing data models.</p>
+              <h5>Couchbase :</h5>
+                <p>A NoSQL, distributed JSON document database. It’s designed for interactive applications that serve large concurrent user loads.</p>
+            </div>
+          </div>
+        </div> 
+        <div class="col-md-4">
+          <!-- <div class="widget-sidebar sidebar-search">
+            <h5 class="sidebar-title">Search</h5>
+            <div class="sidebar-content">
+              <form>
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Search for..." aria-label="Search for...">
+                  <span class="input-group-btn">
+                    <button class="btn btn-secondary btn-search" type="button">
+                      <span class="ion-android-search"></span>
+                    </button>
+                  </span>
+                </div>
+              </form>
+            </div>
+          </div> -->
+          <div class="widget-sidebar widget-tags">
+            <h5 class="sidebar-title">Tags</h5>
+            <div class="sidebar-content">
+              <ul>
+                <li>
+                  <a href="#">Opensource</a>
+                </li>
+                <li>
+                  <a href="#">Databases</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--/ Section Blog-Single End /-->
+
+  <!--/ Section Contact-Footer Star /-->
+  <section class="paralax-mf footer-paralax bg-image sect-mt4 route">
+    <div class="overlay-bottom-mf"></div>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="copyright-box">
+              <p class="copyright">&copy; Copyright <strong>Madhan Kumar</strong>. All Rights Reserved</p>
+              <div class="credits">
+                Designed by <a href="../index.html">Madhan Kumar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </section>
+  <!--/ Section Contact-footer End /-->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+  <div id="preloader"></div>
+
+  <!-- JavaScript Libraries -->
+  <script src="../lib/jquery/jquery.min.js"></script>
+  <script src="../lib/jquery/jquery-migrate.min.js"></script>
+  <script src="../lib/popper/popper.min.js"></script>
+  <script src="../lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="../lib/easing/easing.min.js"></script>
+  <script src="../lib/counterup/jquery.waypoints.min.js"></script>
+  <script src="../lib/counterup/jquery.counterup.js"></script>
+  <script src="../lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="../lib/lightbox/js/lightbox.min.js"></script>
+  <script src="../lib/typed/typed.min.js"></script>
+  <!-- Contact Form JavaScript File -->
+  <script src="../contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="../js/main.js"></script>
+
+    <!-- Search blog Javascript File -->
+  <script src="blog-search.js"></script>
+
+</body>
+</html>
