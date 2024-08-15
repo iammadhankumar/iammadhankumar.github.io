@@ -21,7 +21,6 @@ jQuery(document).ready(function($) {
         } else {
           rule = rule.substr(pos + 1, rule.length);
         }
-
         switch (rule) {
           case 'required':
             if (i.val() === '') {
@@ -30,6 +29,7 @@ jQuery(document).ready(function($) {
             break;
 
           case 'minlen':
+            alert('Temporarily unavailable, coming soon.')
             if (i.val().length < parseInt(exp)) {
               ferror = ierror = true;
             }
@@ -99,7 +99,6 @@ jQuery(document).ready(function($) {
       url: action,
       data: str,
       success: function(msg) {
-        // alert(msg);
         if (msg == 'OK') {
           $("#sendmessage").addClass("show");
           $("#errormessage").removeClass("show");
@@ -111,6 +110,7 @@ jQuery(document).ready(function($) {
         }
 
       }
+      
     });
     return false;
   });
