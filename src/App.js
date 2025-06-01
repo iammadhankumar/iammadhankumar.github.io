@@ -1,5 +1,6 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
+
 
 import Sidebar from "./components/Sidebar";
 import ThemeToggle from "./components/ThemeToggle";
@@ -39,9 +40,9 @@ function ThemedLayout() {
 function App() {
   return (
     <ThemeProvider>
-      <BrowserRouter>
+      <HashRouter>
         <ThemedLayout />
-      </BrowserRouter>
+      </HashRouter>
     </ThemeProvider>
   );
 }
