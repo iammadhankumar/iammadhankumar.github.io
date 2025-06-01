@@ -1,5 +1,5 @@
 import React from "react";
-import { HashRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter , Routes, Route } from "react-router-dom";
 
 
 import Sidebar from "./components/Sidebar";
@@ -40,9 +40,9 @@ function ThemedLayout() {
 function App() {
   return (
     <ThemeProvider>
-      <HashRouter>
+      <BrowserRouter basename="/">
         <ThemedLayout />
-      </HashRouter>
+      </BrowserRouter>
     </ThemeProvider>
   );
 }
