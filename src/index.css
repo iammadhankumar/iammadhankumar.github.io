@@ -2,3 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Custom responsive override for Sidebar */
+@media (max-width: 767px) {
+  aside {
+    position: relative !important;
+    width: 100% !important;
+    height: auto !important;
+    box-shadow: none !important;
+  }
+}
