@@ -34,7 +34,7 @@ function ThemedLayout() {
       {mobileSidebarOpen && (
         <div
           className="fixed inset-0 bg-black bg-opacity-50 z-30 md:hidden"
-          onClick={() => setMobileSidebarOpen(true)}
+          onClick={() => setMobileSidebarOpen(false)}
         />
       )}
 
@@ -54,7 +54,7 @@ function ThemedLayout() {
           {/* Hamburger for mobile */}
           <button
             className="md:hidden text-gray-800 dark:text-gray-200"
-            onClick={() => setMobileSidebarOpen(false)}
+            onClick={() => setMobileSidebarOpen(true)}
           >
             ☰
           </button>
