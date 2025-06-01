@@ -6,12 +6,6 @@ import reportWebVitals from './reportWebVitals';
 import { ThemeProvider } from './components/ThemeContext'; 
 
 // index.js (top of file, before ReactDOM.createRoot)
-if (sessionStorage.redirect) {
-  const redirect = sessionStorage.redirect;
-  delete sessionStorage.redirect;
-  window.history.replaceState(null, null, redirect);
-}
-
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
