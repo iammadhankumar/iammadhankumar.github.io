@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
 
-export default function Sidebar({ onLinkClick }) {
+export default function Sidebar() {
   return (
     <aside className="w-64 h-screen bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-gray-100 p-6 shadow-lg transition-colors duration-300 fixed top-0 left-0 flex flex-col justify-between">
       <div>
@@ -31,16 +31,15 @@ export default function Sidebar({ onLinkClick }) {
 
           {/* Replace Contact NavLink with mailto anchor */}
           <a
-        href="mailto:madhansmk1697@gmail.com"
-        onClick={(e) => {
-          e.preventDefault();
-          window.location.href = "mailto:madhansmk1697@gmail.com";
-          if (onLinkClick) onLinkClick(); // ✅ Close sidebar on mobile
-        }}
-        className="block px-4 py-2 rounded hover:bg-gray-300 dark:hover:bg-gray-700 cursor-pointer"
-      >
-        Contact
-      </a>
+            href="mailto:madhansmk1697@gmail.com"
+            onClick={(e) => {
+              e.preventDefault();
+              window.location.href = "mailto:madhansmk1697@gmail.com";
+            }}
+            className="block px-4 py-2 rounded hover:bg-gray-300 dark:hover:bg-gray-700 cursor-pointer"
+          >
+            Contact
+          </a>
         </nav>
       </div>
       <div className="flex justify-center space-x-6 text-2xl border-t border-gray-300 dark:border-gray-700 pt-4">
