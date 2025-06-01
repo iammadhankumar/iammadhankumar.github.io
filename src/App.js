@@ -12,50 +12,54 @@ import Contact from "./pages/contact";
 import { ThemeProvider } from "./components/ThemeContext";
 
 function ThemedLayout() {
-  const [sidebarOpen, setSidebarOpen] = useState(false);
+  const [mobileSidebarOpen, setMobileSidebarOpen] = useState(false);
 
   return (
-    <div className="min-h-screen bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-300 relative">
-      {/* Mobile hamburger toggle button */}
-      <button
-        className="md:hidden fixed top-4 left-4 z-50 bg-gray-200 dark:bg-gray-700 p-2 rounded"
-        onClick={() => setSidebarOpen(!sidebarOpen)}
-      >
-        ☰
-      </button>
+    <div className="flex min-h-screen bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-300">
+      {/* Mobile sidebar overlay */}
+      {mobileSidebarOpen && (
+        <div
+          className="fixed inset-0 bg-black bg-opacity-50 z-30 md:hidden"
+          onClick={() => setMobileSidebarOpen(false)}
+        />
+      )}
 
-      {/* Sidebar: always shown on desktop, toggleable on mobile */}
+      {/* Sidebar */}
       <div
-        className={`${
-          sidebarOpen ? "block" : "hidden"
-        } md:block fixed top-0 left-0 z-40`}
+        className={`fixed md:static top-0 left-0 z-40 w-64 h-full bg-white dark:bg-gray-800 shadow md:translate-x-0 transform transition-transform duration-300 ${
+          mobileSidebarOpen ? "translate-x-0" : "-translate-x-full"
+        } md:translate-x-0`}
       >
         <Sidebar />
       </div>
 
-      {/* Mobile overlay to close sidebar */}
-      {sidebarOpen && (
-        <div
-          className="fixed inset-0 bg-black bg-opacity-40 md:hidden z-30"
-          onClick={() => setSidebarOpen(false)}
-        />
-      )}
-
       {/* Main content */}
-      <main className="md:pl-64 p-6 overflow-auto min-h-screen">
-        {/* Theme toggle button */}
-        <div className="absolute top-4 right-6 z-20">
-          <ThemeToggle />
+      <div className="flex-1 flex flex-col ml-0 md:ml-64">
+        {/* Top bar with hamburger and theme toggle */}
+        <div className="flex items-center justify-between p-4 shadow md:shadow-none">
+          {/* Hamburger for mobile */}
+          <button
+            className="md:hidden text-gray-800 dark:text-gray-200"
+            onClick={() => setMobileSidebarOpen(true)}
+          >
+            ☰
+          </button>
+          {/* Theme Toggle on right */}
+          <div className="ml-auto">
+            <ThemeToggle />
+          </div>
         </div>
 
-        {/* Routes */}
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/blog" element={<Blog />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
-      </main>
+        {/* Routes content */}
+        <main className="p-4">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </main>
+      </div>
     </div>
   );
 }
