@@ -1,6 +1,8 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import profileImg from '../assets/images/profile.png';
+
 
 export default function Sidebar({onLinkClick = () => {} }) {
   return (
@@ -8,7 +10,7 @@ export default function Sidebar({onLinkClick = () => {} }) {
       <div>
         <div className="mb-8 text-center">
           <img
-            src="https://i.pravatar.cc/100"
+            src={profileImg}
             alt="Profile"
             className="rounded-full w-24 h-24 mx-auto mb-4 border-2 border-gray-300 dark:border-gray-600"
           />
