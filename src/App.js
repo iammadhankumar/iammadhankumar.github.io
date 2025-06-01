@@ -48,13 +48,13 @@ function ThemedLayout() {
       </div>
 
       {/* Main content */}
-      <div className="flex-1 flex flex-col ml-0 md:ml-64">
+      <div className="flex-1 flex flex-col">
         {/* Top bar with hamburger and theme toggle */}
         <div className="flex items-center justify-between p-4 shadow md:shadow-none">
           {/* Hamburger for mobile */}
           <button
             className="md:hidden text-gray-800 dark:text-gray-200"
-            onClick={() => setMobileSidebarOpen(true)}
+            onClick={() => setMobileSidebarOpen(false)}
           >
             ☰
           </button>
