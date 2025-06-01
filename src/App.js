@@ -44,7 +44,7 @@ function ThemedLayout() {
           mobileSidebarOpen ? "translate-x-0" : "-translate-x-full"
         } md:translate-x-0`}
       >
-        <Sidebar />
+         <Sidebar onLinkClick={() => setMobileSidebarOpen(false)} />
       </div>
 
       {/* Main content */}
