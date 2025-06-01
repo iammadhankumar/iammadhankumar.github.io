@@ -40,7 +40,7 @@ function ThemedLayout() {
 function App() {
   return (
     <ThemeProvider>
-      <BrowserRouter basename="/">
+      <BrowserRouter>
         <ThemedLayout />
       </BrowserRouter>
     </ThemeProvider>
