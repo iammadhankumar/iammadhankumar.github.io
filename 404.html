@@ -1,7 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta http-equiv="refresh" content="0; URL=/" />
+    <meta charset="UTF-8" />
+    <script>
+      // Redirect to index.html with the original path as a query
+      var redirectTo = window.location.pathname + window.location.search + window.location.hash;
+      window.location.replace('/?redirect=' + encodeURIComponent(redirectTo));
+    </script>
   </head>
-  <body></body>
+  <body>
+    <p>Redirecting...</p>
+  </body>
 </html>

@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { useNavigate, BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Sidebar from "./components/Sidebar";
 import ThemeToggle from "./components/ThemeToggle";
@@ -10,6 +10,20 @@ import Blog from "./pages/blog";
 import Contact from "./pages/contact";
 
 import { ThemeProvider } from "./components/ThemeContext";
+
+function RedirectHandler() {
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const redirectPath = params.get("redirect");
+    if (redirectPath) {
+      navigate(redirectPath);
+    }
+  }, [navigate]);
+
+  return null;
+}
 
 function ThemedLayout() {
   const [mobileSidebarOpen, setMobileSidebarOpen] = useState(false);
@@ -52,6 +66,7 @@ function ThemedLayout() {
 
         {/* Routes content */}
         <main className="p-4">
+          <RedirectHandler />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
