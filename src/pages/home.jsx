@@ -10,17 +10,19 @@ export default function Home() {
       </h2>
 
       <p className="mb-6">
-       I’m a results-driven software engineer with over 6+ years of experience in building scalable web and mobile apps and improving old enterprise systems.
-       I work mainly with Java, Spring Boot, Angular, and AWS, and I enjoy creating clean, efficient, and reliable applications.
+        I am a results-driven software engineer with over six years of experience designing and developing scalable web and mobile applications while revitalizing legacy enterprise systems. My expertise lies in Java, Spring Boot, Angular, and AWS. I take pride in delivering clean, efficient, and dependable solutions that meet business needs.
       </p>
 
       <p className="mb-6">
-       I am fuelled by the passion of learning and understanding. I believe that "Learning is just as entertaining as entertainment, but with long term benefits."
+         Beyond coding, I am committed to creating meaningful impact by solving complex challenges and transforming ideas into practical technology.      
+      </p>
+
+      <p className="mb-6">
+         I firmly believe that learning is not merely a task but an enjoyable journey. For me, it is as engaging as any form of entertainment, yet offers lasting benefits.      
       </p>
 
       <p className="mb-8">
-        I’m always eager to learn, explore new technologies, and contribute to
-        impactful projects. Let’s connect and create something meaningful.
+        I am always eager to embrace new technologies, optimize systems, and contribute to projects that matter. Let’s connect and collaborate to create exceptional results.
       </p>
 
       <Link
