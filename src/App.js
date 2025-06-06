@@ -29,7 +29,7 @@ function ThemedLayout() {
   const [mobileSidebarOpen, setMobileSidebarOpen] = useState(false);
 
   return (
-    <div className="flex min-h-screen bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-300">
+    <div className="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-300">
       {/* Mobile sidebar overlay */}
       {mobileSidebarOpen && (
         <div
@@ -40,7 +40,7 @@ function ThemedLayout() {
 
       {/* Sidebar */}
       <div
-        className={`fixed md:static top-0 left-0 z-40 w-64 h-full bg-white dark:bg-gray-800 shadow md:translate-x-0 transform transition-transform duration-300 ${
+        className={`fixed top-0 left-0 z-40 w-64 h-full bg-white dark:bg-gray-800 shadow md:translate-x-0 transform transition-transform duration-300 ${
           mobileSidebarOpen ? "translate-x-0" : "-translate-x-full"
         } md:translate-x-0`}
       >
@@ -48,7 +48,7 @@ function ThemedLayout() {
       </div>
 
       {/* Main content */}
-      <div className="flex-1 flex flex-col">
+      <div className="md:ml-64 h-screen flex flex-col overflow-hidden">
         {/* Top bar with hamburger and theme toggle */}
         <div className="flex items-center justify-between p-4 shadow md:shadow-none">
           {/* Hamburger for mobile */}
@@ -65,7 +65,7 @@ function ThemedLayout() {
         </div>
 
         {/* Routes content */}
-        <main className="p-4">
+        <main className="flex-1 overflow-y-auto p-4"> 
           <RedirectHandler />
           <Routes>
             <Route path="/" element={<Home />} />
