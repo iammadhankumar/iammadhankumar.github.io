@@ -1,5 +1,12 @@
 const blogPosts = [
   {
+    title: 'Java Design Patterns in Real Projects',
+    date: 'June 14, 2025',
+    readTime: '3 min read',
+    description: 'Mastering Design Patterns to Solve Real Development Challenges',
+    url: 'https://dev.to/iammadhankumar/java-design-patterns-in-real-projects-2fmf',
+  },
+  {
     title: 'Interesting Java Facts You Probably Did not Know',
     date: 'June 08, 2025',
     readTime: '4 min read',

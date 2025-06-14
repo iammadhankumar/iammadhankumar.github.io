@@ -8,6 +8,7 @@ import Home from "./pages/home";
 import About from "./pages/about";
 import Blog from "./pages/blog";
 import Contact from "./pages/contact";
+import Store from "./pages/store";
 
 import { ThemeProvider } from "./components/ThemeContext";
 
@@ -72,6 +73,7 @@ function ThemedLayout() {
             <Route path="/about" element={<About />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/store" element={<Store />} />
           </Routes>
         </main>
       </div>

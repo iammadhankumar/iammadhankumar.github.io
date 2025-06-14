@@ -17,7 +17,7 @@ export default function Sidebar({onLinkClick = () => {} }) {
           <h1 className="font-semibold text-lg">Madhan Kumar</h1>
         </div>
         <nav className="flex flex-col space-y-4">
-          {["Home", "About", "Blog"].map((page) => (
+          {["Home", "About", "Blog", "Store"].map((page) => (
             <NavLink
               key={page}
               to={page === "Home" ? "/" : `/${page.toLowerCase()}`}
