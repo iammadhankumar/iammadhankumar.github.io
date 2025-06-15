@@ -128,7 +128,7 @@ function About() {
         I focus on writing clean, maintainable code with attention to clarity, performance, and teamwork. I'm committed to continuous learning and enjoy solving complex problems while delivering meaningful outcomes.
       </p>
       
-      <h2 className="text-xl font-semibold mt-10 mb-3 text-gray-800 dark:text-gray-200">Hobbies:</h2>
+      <h2 className="text-xl font-semibold mt-10 mb-3 text-gray-800 dark:text-gray-200">Hobbies</h2>
       <ul className="list-disc list-outside pl-5 space-y-1">
         <li>Watching movies</li>
         <li>Traveling and nature walks</li>
