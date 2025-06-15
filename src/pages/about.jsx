@@ -15,28 +15,36 @@ function About() {
         Professional Experience
       </h2>
       <p className="mb-4">
-        Over 6 years of experience as a Full-Stack Java Developer, with strong exposure to the development and implementation of web and mobile applications.
+        Software Engineer with over 6 years of hands-on experience in the design, development, and deployment of scalable web and mobile applications. Adept in both front-end and back-end technologies, with a strong foundation in Java and modern web frameworks.      </p>
+      <p className="mb-4">
+       Proficient in Core Java (Java SE) with solid understanding of Collections, Multithreading, and Object-Oriented Programming concepts.
       </p>
       <p className="mb-4">
-        Proficient in Java SE with deep knowledge of Collections, Multithreading, and Core Java concepts. Experienced in Java technologies such as JDBC, JPA, and ORM.
+       Experienced in Java EE technologies including JDBC, JPA, and ORM frameworks.
       </p>
       <p className="mb-4">
-        Skilled in developing both microservices and monolithic applications using Spring Boot and Hibernate, with a focus on building secure RESTful APIs.
+        Strong expertise in developing applications using Spring Boot and Spring MVC frameworks.
       </p>
       <p className="mb-4">
-        Experienced in working with MySQL, PostgreSQL, and MongoDB for data management.
+        Hands-on experience with RESTful Web Services development and integration.
       </p>
       <p className="mb-4">
-        Strong understanding of Maven for managing dependencies and project lifecycles.
+        Skilled in JUnit for unit testing and ensuring code reliability.
       </p>
       <p className="mb-4">
-        Proficient in using Log4J for application logging and monitoring.
+        Familiar with Maven for build management and Log4j for logging configurations.
       </p>
       <p className="mb-4">
-        Familiar with project documentation practices including E-R diagrams and Swagger API documentation.
+        Proficient in working with databases such as MySQL, PostgreSQL, and MongoDB, with strong capabilities in designing, implementing, and managing relational and non-relational databases efficiently.
       </p>
       <p className="mb-4">
-        Experienced in Angular, with a focus on integrating REST APIs and improving frontend functionality through dynamic and responsive UI development.
+        Skilled in designing and maintaining technical documentation, such as Entity-Relationship diagrams and Swagger API
+      </p>
+      <p className="mb-4">
+        Well-versed in Angular, with practical knowledge of creating reusable components, services, and working with commonly used modules.
+      </p>
+      <p className="mb-4">
+        Highly self-motivated with a strong work ethic and the ability to quickly grasp and adapt to new technologies.
       </p>
 
       <h2 className="text-xl font-semibold mt-10 mb-3 text-gray-800 dark:text-gray-200">
@@ -49,29 +57,69 @@ function About() {
         </div>
         <div>
           <p className="font-semibold text-gray-800 dark:text-gray-200">Frameworks:</p>
-          <p>Spring Boot, Flask, Angular, Hibernate</p>
-        </div>
-        <div>
-          <p className="font-semibold text-gray-800 dark:text-gray-200">Tools & Platforms:</p>
-          <p>Git, Docker, Jenkins, Postman</p>
-        </div>
-        <div>
-          <p className="font-semibold text-gray-800 dark:text-gray-200">Cloud:</p>
-          <p>AWS (EC2, S3, Lambda)</p>
+          <p>Spring Boot, Hibernate, Servlet, Angular, Python-Flask</p>
         </div>
         <div>
           <p className="font-semibold text-gray-800 dark:text-gray-200">Databases:</p>
-          <p>MySQL, PostgreSQL, MongoDB</p>
+          <p>MySQL, PostgreSQL, MicrosoftSQL, MongoDB</p>
+        </div>
+        <div>
+          <p className="font-semibold text-gray-800 dark:text-gray-200">Cloud:</p>
+          <p>AWS (EC2, S3, Lambda, RDS)</p>
+        </div>
+        <div>
+          <p className="font-semibold text-gray-800 dark:text-gray-200">Tools & Platforms:</p>
+          <p>Git, Jenkins, Postman, Docker</p>
+        </div>
+        <div>
+          <p className="font-semibold text-gray-800 dark:text-gray-200">Webservices:</p>
+          <p>Rest API</p>
+        </div>
+        <div>
+          <p className="font-semibold text-gray-800 dark:text-gray-200">Build Tools:</p>
+          <p>Maven</p>
+        </div>
+        <div>
+          <p className="font-semibold text-gray-800 dark:text-gray-200">Testing:</p>
+          <p>Junit</p>
+        </div>
+        <div>
+          <p className="font-semibold text-gray-800 dark:text-gray-200">Application Servers / Middleware:</p>
+          <p>Apache Tomcat</p>
         </div>
       </div>
+
+    <h2 className="text-xl font-semibold mt-10 mb-3 text-gray-800 dark:text-gray-200">
+        Soft Skills
+    </h2>
+    <div className="mb-6 space-y-4">
+      <div>
+        <p className="font-semibold text-gray-800 dark:text-gray-200">Problem-Solving:</p>
+        <p>I enjoy breaking down complex problems and finding simple, effective solutions.</p>
+      </div>
+      <div>
+        <p className="font-semibold text-gray-800 dark:text-gray-200">Team Collaboration:</p>
+        <p>I work well with others and believe that the best results come from strong teamwork and shared goals.</p>
+      </div>
+      <div>
+        <p className="font-semibold text-gray-800 dark:text-gray-200">Communication:</p>
+        <p>I'm comfortable expressing ideas clearly, whether in writing or conversation, and I value open, honest communication.</p>
+      </div>
+       <div>
+        <p className="font-semibold text-gray-800 dark:text-gray-200">Adaptability:</p>
+        <p>I'm comfortable adapting to new tools and technologies and enjoy finding smarter ways to work.</p>
+      </div>
+    </div>
 
       <h2 className="text-xl font-semibold mt-10 mb-3 text-gray-800 dark:text-gray-200">
         Education
       </h2>
       <p className="mb-6">
         Bachelor of Engineering in Computer Science <br />
-        Graduated in 2018
+        Graduated - 2018
       </p>
+
+      
 
       <h2 className="text-xl font-semibold mt-10 mb-3 text-gray-800 dark:text-gray-200">
         My Approach
@@ -79,6 +127,16 @@ function About() {
       <p>
         I focus on writing clean, maintainable code with attention to clarity, performance, and teamwork. I'm committed to continuous learning and enjoy solving complex problems while delivering meaningful outcomes.
       </p>
+      
+      <h2 className="text-xl font-semibold mt-10 mb-3 text-gray-800 dark:text-gray-200">Hobbies:</h2>
+      <ul className="list-disc list-outside pl-5 space-y-1">
+        <li>Watching movies</li>
+        <li>Traveling and nature walks</li>
+        <li>Playing casual games</li>
+        <li>Surfing Internet</li>
+        <li>Reading blogs</li>
+        <li>Problem solving and coding challenges</li>
+       </ul>
     </div>
   );
 }
