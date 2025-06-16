@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Link } from "react-router-dom";
 
@@ -6,7 +7,7 @@ export default function Home() {
     <div className="max-w-3xl mx-auto px-6 py-12 font-sans leading-relaxed">
       <h1 className="text-5xl font-extrabold mb-6">I'm Madhan Kumar</h1>
       <h2 className="text-3xl font-semibold mb-10">
-        Software Engineer | Full-Stack Developer
+        Software Engineer
       </h2>
 
       <p className="mb-6">

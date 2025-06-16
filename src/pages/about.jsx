@@ -2,13 +2,13 @@ import React from 'react';
 
 function About() {
   return (
-    <div className="p-6 sm:p-8 md:p-10 max-w-3xl mx-auto font-sans leading-relaxed text-gray-900 dark:text-gray-100">
+    <div className="max-w-3xl mx-auto px-6 py-12 font-sans leading-relaxed">
       <h1 className="text-3xl font-semibold mb-6 border-b-2 border-gray-300 dark:border-gray-600 pb-2">
         About Me
       </h1>
 
       <p className="mb-6">
-        I’m a passionate Software Engineer with over 6 years of experience in designing, developing, and deploying scalable web applications and backend systems. I specialize in building high-performance solutions using Java, Spring Boot, Hibernate, and Angular, along with hands-on experience in cloud-based deployments on AWS.
+        I’m a passionate Software Engineer with over 6 years of experience in designing, developing, and deploying scalable web applications and backend systems. I specialize in building high performance solutions using Java, Spring Boot, Hibernate, and Angular, along with hands-on experience in cloud-based deployments on AWS.
       </p>
 
       <h2 className="text-xl font-semibold mt-10 mb-3 text-gray-800 dark:text-gray-200">
