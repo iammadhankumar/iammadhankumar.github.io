@@ -20,6 +20,13 @@ const blogPosts = [
     description: 'Mastering Design Patterns to Solve Real Development Challenges',
     url: 'https://dev.to/iammadhankumar/java-design-patterns-in-real-projects-2fmf',
   },
+    {
+    title: 'Java Features in 2025',
+    date: 'June 22, 2025',
+    readTime: '5 min read',
+    description: 'A Comprehensive Overview Welcome to the Future of Java',
+    url: 'https://dev.to/iammadhankumar/java-features-in-2025-479m',
+  },
   // Add more blog objects with readTime...
 ];
 
