@@ -6,9 +6,13 @@ const POSTS_PER_PAGE = 5;
 const Blog = () => {
   const [currentPage, setCurrentPage] = useState(1);
 
-  const totalPages = Math.ceil(blogPosts.length / POSTS_PER_PAGE);
-  const startIndex = (currentPage - 1) * POSTS_PER_PAGE;
-  const currentPosts = blogPosts.slice(startIndex, startIndex + POSTS_PER_PAGE);
+  // 1. Make a copy, then reverse it.
+  const reversedPosts = [...blogPosts].reverse();
+
+  // 2. Work with the reversed list for paging.
+  const totalPages  = Math.ceil(reversedPosts.length / POSTS_PER_PAGE);
+  const startIndex  = (currentPage - 1) * POSTS_PER_PAGE;
+  const currentPosts = reversedPosts.slice(startIndex, startIndex + POSTS_PER_PAGE);
 
   return (
     <div className="px-6 py-10 max-w-4xl mx-auto text-gray-900 dark:text-gray-100">
