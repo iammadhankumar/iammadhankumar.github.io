@@ -34,13 +34,6 @@ const blogPosts = [
     description: 'Explore the Must-Have Java Tech Stack That Makes You Stand Out',
     url: 'https://dev.to/iammadhankumar/java-developer-skills-checklist-in-2025-9i4',
   },
-  {
-    title: 'Java Developer Skills Checklist in 2025',
-    date: 'June 23, 2025',
-    readTime: '3 min read',
-    description: 'Explore the Must-Have Java Tech Stack That Makes You Stand Out',
-    url: 'https://dev.to/iammadhankumar/java-developer-skills-checklist-in-2025-9i4',
-  },
   // Add more blog objects with readTime...
 ];
 

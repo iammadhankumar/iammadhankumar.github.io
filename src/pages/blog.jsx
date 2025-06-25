@@ -3,66 +3,76 @@ import blogPosts from '../data/blogs';
 
 const POSTS_PER_PAGE = 5;
 
+// tidy long subtitles
+const truncate = (text, max = 150) =>
+  text.length > max ? `${text.slice(0, max).trim()}…` : text;
+
 const Blog = () => {
   const [currentPage, setCurrentPage] = useState(1);
 
-  // 1. Make a copy, then reverse it.
+  /* newest first */
   const reversedPosts = [...blogPosts].reverse();
 
-  // 2. Work with the reversed list for paging.
-  const totalPages  = Math.ceil(reversedPosts.length / POSTS_PER_PAGE);
-  const startIndex  = (currentPage - 1) * POSTS_PER_PAGE;
+  /* paging */
+  const totalPages   = Math.ceil(reversedPosts.length / POSTS_PER_PAGE);
+  const startIndex   = (currentPage - 1) * POSTS_PER_PAGE;
   const currentPosts = reversedPosts.slice(startIndex, startIndex + POSTS_PER_PAGE);
 
   return (
-    <div className="px-6 py-10 max-w-4xl mx-auto text-gray-900 dark:text-gray-100">
-      <h1 className="text-3xl font-semibold mb-6">Blog</h1>
+    <div className="px-6 py-10 max-w-3xl mx-auto text-gray-900 dark:text-gray-100">
+      <h1 className="text-4xl font-extrabold mb-10">Blog</h1>
 
-      <div className="space-y-6">
+      {/* single-column list, whole card clickable */}
+      <div className="space-y-10">
         {currentPosts.map((post, index) => (
-          <div
+          <a
             key={index}
-            className="border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow"
+            href={post.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block border-b border-gray-300 dark:border-gray-700 pb-6 group last:border-b-0"
           >
-            <h2 className="text-xl font-bold">{post.title}</h2>
-            <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">
+            {/* Title */}
+            <h2 className="text-2xl font-semibold mb-2 leading-snug break-words
+                           group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+              {post.title}
+            </h2>
+
+            {/* Subtitle / description */}
+            <p className="text-base text-gray-700 dark:text-gray-300 leading-relaxed mb-3">
+              {truncate(post.description)}
+            </p>
+
+            {/* Other meta info */}
+            <p className="text-sm text-gray-600 dark:text-gray-400">
               {post.date} • {post.readTime}
             </p>
-            <p className="mb-4">{post.description}</p>
-            <a
-              href={post.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block text-blue-600 dark:text-blue-400 font-medium hover:underline"
-            >
-              Read&nbsp;More&nbsp;→
-            </a>
-          </div>
+          </a>
         ))}
       </div>
 
-      {/* Pagination Controls */}
-      <div className="flex justify-center items-center mt-10 space-x-4">
-        {/* Render PREVIOUS only when we are beyond page 1 */}
+      {/* pagination */}
+      <div className="flex justify-center items-center mt-12 space-x-6">
         {currentPage > 1 && (
           <button
-            onClick={() => setCurrentPage((prev) => prev - 1)}
-            className="btn btn-outline btn-sm"
+            onClick={() => setCurrentPage((p) => p - 1)}
+            className="btn btn-sm border border-gray-400 dark:border-gray-600
+                       hover:bg-gray-100 dark:hover:bg-gray-800"
             type="button"
           >
             Prev
           </button>
         )}
 
-        <span className="text-sm opacity-70">
+        <span className="text-sm opacity-80">
           Page {currentPage} of {totalPages || 1}
         </span>
 
-        {/* Render NEXT only when there is another page */}
         {currentPage < totalPages && (
           <button
-            onClick={() => setCurrentPage((prev) => prev + 1)}
-            className="btn btn-outline btn-sm"
+            onClick={() => setCurrentPage((p) => p + 1)}
+            className="btn btn-sm border border-gray-400 dark:border-gray-600
+                       hover:bg-gray-100 dark:hover:bg-gray-800"
             type="button"
           >
             Next
