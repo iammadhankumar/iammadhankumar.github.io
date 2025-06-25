@@ -35,7 +35,7 @@ const Blog = () => {
               rel="noopener noreferrer"
               className="inline-block text-blue-600 dark:text-blue-400 font-medium hover:underline"
             >
-              Read More →
+              Read&nbsp;More&nbsp;→
             </a>
           </div>
         ))}
@@ -43,23 +43,31 @@ const Blog = () => {
 
       {/* Pagination Controls */}
       <div className="flex justify-center items-center mt-10 space-x-4">
-        <button
-          onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
-          className="btn btn-outline btn-sm"
-          disabled={currentPage === 1}
-        >
-          Previous
-        </button>
+        {/* Render PREVIOUS only when we are beyond page 1 */}
+        {currentPage > 1 && (
+          <button
+            onClick={() => setCurrentPage((prev) => prev - 1)}
+            className="btn btn-outline btn-sm"
+            type="button"
+          >
+            Prev
+          </button>
+        )}
+
         <span className="text-sm opacity-70">
-          Page {currentPage} of {totalPages}
+          Page {currentPage} of {totalPages || 1}
         </span>
-        <button
-          onClick={() => setCurrentPage((prev) => Math.min(prev + 1, totalPages))}
-          className="btn btn-outline btn-sm"
-          disabled={currentPage === totalPages}
-        >
-          Next
-        </button>
+
+        {/* Render NEXT only when there is another page */}
+        {currentPage < totalPages && (
+          <button
+            onClick={() => setCurrentPage((prev) => prev + 1)}
+            className="btn btn-outline btn-sm"
+            type="button"
+          >
+            Next
+          </button>
+        )}
       </div>
     </div>
   );
