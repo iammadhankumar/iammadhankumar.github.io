@@ -46,7 +46,7 @@ export default function Sidebar({onLinkClick = () => {} }) {
           </a>
         </nav>
       </div>
-          <div className="flex justify-center space-x-6 text-2xl border-t pb-safe border-gray-300 dark:border-gray-700 pt-4">
+          <div className="flex justify-center space-x-6 text-2xl border-t pb-[calc(env(safe-area-inset-bottom)+2rem)] border-gray-300 dark:border-gray-700 pt-4">
         <a
           href="https://github.com/iammadhankumar"
           target="_blank"
