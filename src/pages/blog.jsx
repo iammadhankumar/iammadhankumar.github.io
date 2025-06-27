@@ -33,8 +33,8 @@ const Blog = () => {
             className="block border-b border-gray-300 dark:border-gray-700 pb-6 group last:border-b-0"
           >
             {/* Title */}
-            <h2 className="text-2xl font-semibold mb-2 leading-snug break-words
-                           group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+            <h2 className="text-xl md:text-2xl font-semibold mb-2 leading-snug break-words
+                 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
               {post.title}
             </h2>
 
