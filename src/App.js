@@ -44,6 +44,18 @@ function ThemedLayout() {
   }, [location.pathname]);
   /* ↥ END NEW */
 
+  useEffect(() => {
+  if (mobileSidebarOpen) {
+    document.body.style.overflow = "hidden";
+  } else {
+    document.body.style.overflow = "";
+  }
+  return () => {
+    document.body.style.overflow = "";
+  };
+}, [mobileSidebarOpen]);
+
+
   return (
     <div className="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-300">
       {/* Mobile sidebar overlay */}
@@ -56,7 +68,7 @@ function ThemedLayout() {
 
       {/* Sidebar */}
       <div
-        className={`fixed top-0 left-0 z-40 w-64 h-full bg-white dark:bg-gray-800 shadow md:translate-x-0 transform transition-transform duration-300 ${
+        className={`fixed top-0 left-0 z-40 w-64 h-[100dvh] bg-white dark:bg-gray-800 shadow md:translate-x-0 transform transition-transform duration-300 ${
           mobileSidebarOpen ? "translate-x-0" : "-translate-x-full"
         } md:translate-x-0`}
       >

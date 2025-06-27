@@ -6,8 +6,7 @@ import profileImg from '../assets/images/profile.png';
 
 export default function Sidebar({onLinkClick = () => {} }) {
   return (
-    // <aside className="w-64 h-screen bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-gray-100 p-6 shadow-lg transition-colors duration-300 fixed top-0 left-0 flex flex-col justify-between">
-    <aside className="w-64 h-[100dvh] bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-gray-100 p-6 shadow-lg transition-colors duration-300 fixed top-0 left-0 flex flex-col justify-between">
+    <aside className="w-64 h-[100dvh] bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-gray-100 px-6 pt-6 overflow-hidden shadow-lg transition-colors duration-300 fixed top-0 left-0 flex flex-col justify-between">
       <div>
         <div className="mb-8 text-center">
           <img
@@ -17,7 +16,6 @@ export default function Sidebar({onLinkClick = () => {} }) {
           />
           <h1 className="font-semibold text-lg">Madhan Kumar</h1>
         </div>
-          {/* <nav className="flex flex-col space-y-4"> */}
           <nav className="flex-1 overflow-y-auto flex flex-col space-y-4">
           {["Home", "About", "Blog", "Store"].map((page) => (
             <NavLink
@@ -48,7 +46,6 @@ export default function Sidebar({onLinkClick = () => {} }) {
           </a>
         </nav>
       </div>
-      {/* <div className="flex justify-center space-x-6 text-2xl border-t border-gray-300 dark:border-gray-700 pt-4"> */}
           <div className="flex justify-center space-x-6 text-2xl border-t pb-safe border-gray-300 dark:border-gray-700 pt-4">
         <a
           href="https://github.com/iammadhankumar"
