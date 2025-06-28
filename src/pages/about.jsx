@@ -38,7 +38,7 @@ function About() {
         Proficient in working with databases such as MySQL, PostgreSQL, and MongoDB, with strong capabilities in designing, implementing, and managing relational and non-relational databases efficiently.
       </p>
       <p className="mb-4">
-        Skilled in designing and maintaining technical documentation, such as Entity-Relationship diagrams and Swagger API
+        Skilled in designing and maintaining technical documentation, such as Entity-Relationship diagrams and Swagger API.
       </p>
       <p className="mb-4">
         Well-versed in Angular, with practical knowledge of creating reusable components, services, and working with commonly used modules.

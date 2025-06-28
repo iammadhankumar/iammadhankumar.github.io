@@ -34,6 +34,13 @@ const blogPosts = [
     description: 'Explore the Must-Have Java Tech Stack That Makes You Stand Out',
     url: 'https://dev.to/iammadhankumar/java-developer-skills-checklist-in-2025-9i4',
   },
+  {
+    title: 'Why Java Remains the Most In-Demand Programming Language in 2025',
+    date: 'June 28, 2025',
+    readTime: '3 min read',
+    description: 'Explore how Java continues to lead in developer productivity, job market demand, and enterprise-grade ecosystem even in the fast-evolving tech landscape of 2025',
+    url: 'https://dev.to/iammadhankumar/why-java-remains-the-most-in-demand-programming-language-in-2025-297l',
+  },
   // Add more blog objects with readTime...
 ];
 
