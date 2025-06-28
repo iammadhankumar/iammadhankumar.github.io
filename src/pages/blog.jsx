@@ -30,11 +30,14 @@ const Blog = () => {
             href={post.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="block border-b border-gray-300 dark:border-gray-700 pb-6 group last:border-b-0"
+            className="block border-b border-gray-300 dark:border-gray-700 pb-6
+                       text-gray-900 dark:text-gray-100
+                       visited:text-gray-900 dark:visited:text-gray-100
+                       focus:outline-none focus:ring-0
+                       group last:border-b-0"
           >
             {/* Title */}
-            <h2 className="text-xl md:text-2xl font-semibold mb-2 leading-snug break-words
-                 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+            <h2 className="text-xl md:text-2xl font-semibold mb-2 leading-snug break-words">
               {post.title}
             </h2>
 
@@ -52,15 +55,19 @@ const Blog = () => {
       </div>
 
       {/* pagination */}
-      <div className="flex justify-center items-center mt-12 space-x-6">
+      <div className="flex justify-center items-center mt-12 gap-3">
         {currentPage > 1 && (
           <button
             onClick={() => setCurrentPage((p) => p - 1)}
-            className="btn btn-sm border border-gray-400 dark:border-gray-600
-                       hover:bg-gray-100 dark:hover:bg-gray-800"
+            className="inline-flex items-center gap-1 rounded px-3 py-1 text-xs font-medium
+                       text-gray-700 bg-white border border-gray-300
+                       hover:bg-gray-100 disabled:opacity-40 disabled:pointer-events-none
+                       focus:outline-none focus:ring-0 transition
+                       dark:bg-gray-800 dark:text-gray-100 dark:border-gray-600
+                       dark:hover:bg-gray-700"
             type="button"
           >
-            Prev
+            ← Prev
           </button>
         )}
 
@@ -71,11 +78,15 @@ const Blog = () => {
         {currentPage < totalPages && (
           <button
             onClick={() => setCurrentPage((p) => p + 1)}
-            className="btn btn-sm border border-gray-400 dark:border-gray-600
-                       hover:bg-gray-100 dark:hover:bg-gray-800"
+            className="inline-flex items-center gap-1 rounded px-3 py-1 text-xs font-medium
+                       text-gray-700 bg-white border border-gray-300
+                       hover:bg-gray-100 disabled:opacity-40 disabled:pointer-events-none
+                       focus:outline-none focus:ring-0 transition
+                       dark:bg-gray-800 dark:text-gray-100 dark:border-gray-600
+                       dark:hover:bg-gray-700"
             type="button"
           >
-            Next
+            Next →
           </button>
         )}
       </div>
