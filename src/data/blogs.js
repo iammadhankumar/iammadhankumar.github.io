@@ -1,5 +1,6 @@
 const blogPosts = [
     {
+    id: 1,
     title: 'How to Connect Java with Generative AI',
     date: 'May 30, 2025',
     readTime: '3 min read',
@@ -7,6 +8,7 @@ const blogPosts = [
     url: 'https://medium.com/javarevisited/how-to-connect-java-with-generative-ai-c3df715391a8',
   },
   {
+    id: 2,
     title: 'Interesting Java Facts You Probably Did not Know',
     date: 'June 08, 2025',
     readTime: '4 min read',
@@ -14,6 +16,7 @@ const blogPosts = [
     url: 'https://dev.to/iammadhankumar/interesting-java-facts-you-probably-didnt-know-1hgp',
   },
   {
+    id: 3,
     title: 'Java Design Patterns in Real Projects',
     date: 'June 14, 2025',
     readTime: '3 min read',
@@ -21,6 +24,7 @@ const blogPosts = [
     url: 'https://dev.to/iammadhankumar/java-design-patterns-in-real-projects-2fmf',
   },
   {
+    id: 4,
     title: 'Java Features in 2025',
     date: 'June 22, 2025',
     readTime: '5 min read',
@@ -28,6 +32,7 @@ const blogPosts = [
     url: 'https://dev.to/iammadhankumar/java-features-in-2025-479m',
   },
   {
+    id: 5,
     title: 'Java Developer Skills Checklist in 2025',
     date: 'June 23, 2025',
     readTime: '3 min read',
@@ -35,6 +40,7 @@ const blogPosts = [
     url: 'https://dev.to/iammadhankumar/java-developer-skills-checklist-in-2025-9i4',
   },
   {
+    id: 6,
     title: 'Why Java Remains the Most In-Demand Programming Language in 2025',
     date: 'June 28, 2025',
     readTime: '3 min read',
