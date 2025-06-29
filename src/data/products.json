@@ -1,8 +1,8 @@
 {
   "Tech-Ebooks": [
     { "id": 1, "name": "Groking The Java Interview", "price": "$13.93", "link": "https://gumroad.com/a/137682707/QqjGH", "image": "https://i.postimg.cc/cCQsz27y/Groking-The-Java-Interview3.png" },
-    { "id": 2, "name": "Grokking the Spring Boot Interview", "price": "$13.93", "link": "https://gumroad.com/a/137682707/hrUXKY", "image": "https://i.postimg.cc/R0XM4fDW/Groking-The-Springboot-Interview.png" },
-    { "id": 3, "name": "Spring Professional Certification Questions", "price": "$13.93", "link": "https://gumroad.com/a/137682707/sygyq", "image": "https://i.postimg.cc/MpwMG7d5/Spring-Professional-Certification-Practice-Questions.png" }
+    { "id": 2, "name": "Grokking the Spring Boot Interview", "price": "$13.93", "link": "https://gumroad.com/a/137682707/hrUXKY", "image": "https://i.postimg.cc/tTVZ97Kw/3d85470a-23a3-4925-9e0c-8e450416cc1a.png" },
+    { "id": 3, "name": "Spring Professional Certification Questions", "price": "$13.93", "link": "https://gumroad.com/a/137682707/sygyq", "image": "https://i.postimg.cc/Zq0vz3sg/Chat-GPT-Image-Jun-28-2025-09-09-39-PM.png" }
 
   ]
 }

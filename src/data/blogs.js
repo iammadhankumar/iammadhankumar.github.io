@@ -47,6 +47,14 @@ const blogPosts = [
     description: 'Explore how Java continues to lead in developer productivity, job market demand, and enterprise-grade ecosystem even in the fast-evolving tech landscape of 2025',
     url: 'https://dev.to/iammadhankumar/why-java-remains-the-most-in-demand-programming-language-in-2025-297l',
   },
+  {
+    id: 7,
+    title: 'Java vs Kotlin in 2025: Which One to Choose and Why?',
+    date: 'June 28, 2025',
+    readTime: '3 min read',
+    description: 'Java vs Kotlin',
+    url: 'https://dev.to/iammadhankumar/java-vs-kotlin-in-2025-which-one-to-choose-and-why-1nhb',
+  },
   // Add more blog objects with readTime...
 ];
 
