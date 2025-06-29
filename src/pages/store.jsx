@@ -18,7 +18,6 @@ function ProductCard({ product }) {
             height={140}
             loading="lazy"
             decoding="async"
-            fetchpriority="low"
             className="w-full h-full object-cover"
             onError={(e) => {
               e.currentTarget.style.display = 'none';
