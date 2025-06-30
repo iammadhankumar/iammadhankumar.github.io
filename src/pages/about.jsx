@@ -41,11 +41,11 @@ function About() {
         <p>Hands‑on experience with RESTful Web Services development and integration.</p>
         <p>Skilled in using JUnit to create effective unit tests that ensure code reliability and quality.</p>
         <p>Familiar with Maven for build management and Log4j for logging configurations.</p>
-        <p>Involved in different payment gateway integrations and upgrading legacy systems to improve performance, security, and maintainability.</p>
+        <p>Involved in different payment gateway integrations for e-commerce applications.</p>
         <p>Worked on modernizing legacy applications by migrating to newer frameworks and optimizing system performance.</p>
         <p>Well-versed in implementing authentication and authorization using Spring Security and JWT.</p>
         <p>Experienced in building and managing backend services on AWS using EC2 for running applications, S3 for storing files, and RDS for handling databases.</p>
-        <p>Proficient in working with such as MySQL, PostgreSQL, and MongoDB with experience in designing and managing different types of databases.</p>
+        <p>Proficient in working with databases such as MySQL, PostgreSQL, and MongoDB with experience in designing and managing different types of databases.</p>
         <p>Skilled in designing and maintaining technical documentation such as Entity‑Relationship diagrams and Swagger API.</p>
         <p>Well‑versed in Angular with practical knowledge of creating reusable components, services, and working with commonly used modules.</p>
         <p>Highly self‑motivated with a strong work ethic and the ability to quickly grasp and adapt to new technologies.</p>
