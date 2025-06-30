@@ -50,7 +50,7 @@ const blogPosts = [
   {
     id: 7,
     title: 'Java vs Kotlin in 2025: Which One to Choose and Why?',
-    date: 'June 28, 2025',
+    date: 'June 29, 2025',
     readTime: '3 min read',
     description: 'Java vs Kotlin',
     url: 'https://dev.to/iammadhankumar/java-vs-kotlin-in-2025-which-one-to-choose-and-why-1nhb',
