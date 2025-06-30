@@ -29,12 +29,10 @@ function About() {
 
         {/* ─── Intro ─── */}
         <p>
-          I’m a passionate Software Engineer with over 6+ years of experience in designing, developing, and deploying scalable web applications and backend systems. I specialize in building high‑performance solutions using Java, Spring Boot, Hibernate, and Angular, along with hands‑on experience in cloud‑based deployments on AWS.
-        </p>
-
+          I’m a passionate Software Engineer with over 6+ years of experience in designing, developing, and deploying scalable web applications and backend systems. I specialize in building scalable solutions using Java, Spring Boot, Hibernate, and Angular, along with hands‑on experience in cloud‑based deployments on AWS.</p>
         {/* ─── Professional Experience ─── */}
         <h2 className="section-h2">Professional Experience</h2>
-        <p>Software Engineer with hands-on experience in designing, developing, and deploying scalable web and mobile applications. Experienced in both frontend and backend technologies with deep knowledge of Java and modern web frameworks.</p>
+        <p>Software Engineer with hands-on experience in designing, developing, and deploying scalable web and mobile applications. Experienced in both frontend and backend development with deep knowledge of Java and modern web frameworks.</p>
         <p>Proficient in Core Java with solid understanding of Collections, Multithreading, and Object‑Oriented Programming concepts.</p>
         <p>Experienced in Java technologies including JDBC, JPA, and ORM frameworks.</p>
         <p>Strong expertise in developing applications using Spring Boot and Spring MVC frameworks.</p>
@@ -43,7 +41,7 @@ function About() {
         <p>Familiar with Maven for build management and Log4j for logging configurations.</p>
         <p>Worked on modernizing legacy applications by migrating to newer frameworks and optimizing system performance.</p>
         <p>Well-versed in implementing authentication and authorization using Spring Security and JWT.</p>
-        <p>Experienced in building and managing backend services on AWS using EC2 for running applications, S3 for storing files, and RDS for handling databases.</p>
+        <p>Experienced in building and managing backend services on AWS using EC2 for running apps, S3 for storing files, and RDS for handling databases.</p>
         <p>Proficient in working with databases such as MySQL, PostgreSQL, and MongoDB with experience in designing and managing different types of databases.</p>
         <p>Skilled in designing and maintaining technical documentation such as Entity‑Relationship diagrams and Swagger API.</p>
         <p>Well‑versed in Angular with practical knowledge of creating reusable components, services, and working with commonly used modules.</p>
