@@ -60,12 +60,7 @@ export default function Home() {
         {/* ────────── Body ────────── */}
         <section className="space-y-6">
           <p>
-            I am a results‑driven software engineer with over six years of
-            experience designing and developing scalable web and mobile
-            applications while revitalizing legacy enterprise systems. My
-            expertise lies in Java, Spring Boot, Angular, and AWS. I take pride
-            in delivering clean, efficient, and dependable solutions that meet
-            business needs.
+            I am a software engineer with over 6+ years of experience in building scalable web and mobile applications. I specialize in Java, Spring Boot, Angular, and AWS. I focus on delivering clean, efficient, and reliable solutions that align with business goals.
           </p>
 
           <p>
