@@ -34,7 +34,7 @@ function About() {
 
         {/* ─── Professional Experience ─── */}
         <h2 className="section-h2">Professional Experience</h2>
-        <p>Software Engineer with hands-on experience in designing, developing, and deploying scalable web and mobile applications. Skilled in both frontend and backend technologies with a strong foundation in Java and modern web frameworks.</p>
+        <p>Software Engineer with hands-on experience in designing, developing, and deploying scalable web and mobile applications. Skilled in both frontend and backend technologies with a strong knowledge in Java and modern web frameworks.</p>
         <p>Proficient in Core Java with solid understanding of Collections, Multithreading, and Object‑Oriented Programming concepts.</p>
         <p>Experienced in Java technologies including JDBC, JPA, and ORM frameworks.</p>
         <p>Strong expertise in developing applications using Spring Boot and Spring MVC frameworks.</p>
