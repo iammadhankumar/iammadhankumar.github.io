@@ -32,7 +32,7 @@ function About() {
           I’m a passionate Software Engineer with over 6+ years of experience in designing, developing, and deploying scalable web applications and backend systems. I specialize in building scalable solutions using Java, Spring Boot, Hibernate, and Angular, along with hands‑on experience in cloud‑based deployments on AWS.</p>
         {/* ─── Professional Experience ─── */}
         <h2 className="section-h2">Professional Experience</h2>
-        <p>Software Engineer with hands-on experience in designing, developing, and deploying scalable web and mobile applications. Experienced in both frontend and backend development with deep knowledge of Java and modern web frameworks.</p>
+        <p>Software Engineer with hands-on experience in designing, developing, and deploying scalable web and mobile applications. Experienced in full-stack development with deep knowledge of Java and modern web frameworks.</p>
         <p>Proficient in Core Java with solid understanding of Collections, Multithreading, and Object‑Oriented Programming concepts.</p>
         <p>Experienced in Java technologies including JDBC, JPA, and ORM frameworks.</p>
         <p>Strong expertise in developing applications using Spring Boot and Spring MVC frameworks.</p>
@@ -54,7 +54,7 @@ function About() {
           <Skill label="Frameworks" value="Spring Boot, Hibernate, Servlet, Angular, React(Moderate), Python‑Flask" />
           <Skill label="Databases" value="MySQL, PostgreSQL, Microsoft SQL, MongoDB" />
           <Skill label="Tools & Platforms" value="Git, Jenkins, Postman, Docker" />
-          <Skill label="Application Servers / Middleware" value="Apache Tomcat" />
+          <Skill label="Application Servers" value="Apache Tomcat" />
           <Skill label="Cloud" value="AWS (EC2, S3, Lambda, RDS)" />
           <Skill label="Webservices" value="REST API" />
           <Skill label="Build Tools" value="Maven" />
