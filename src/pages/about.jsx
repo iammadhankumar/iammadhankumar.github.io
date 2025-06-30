@@ -54,14 +54,14 @@ function About() {
         <h2 className="section-h2">Technical Skills</h2>
         <div className="space-y-2">
           <Skill label="Languages" value="Java, Python, JavaScript, TypeScript" />
-          <Skill label="Frameworks" value="Spring Boot, Hibernate, Servlet, Angular, Python‑Flask" />
+          <Skill label="Frameworks" value="Spring Boot, Hibernate, Servlet, Angular, React(Moderate), Python‑Flask" />
           <Skill label="Databases" value="MySQL, PostgreSQL, Microsoft SQL, MongoDB" />
-          <Skill label="Cloud" value="AWS (EC2, S3, Lambda, RDS)" />
           <Skill label="Tools & Platforms" value="Git, Jenkins, Postman, Docker" />
+          <Skill label="Application Servers / Middleware" value="Apache Tomcat" />
+          <Skill label="Cloud" value="AWS (EC2, S3, Lambda, RDS)" />
           <Skill label="Webservices" value="REST API" />
           <Skill label="Build Tools" value="Maven" />
           <Skill label="Testing" value="JUnit" />
-          <Skill label="Application Servers / Middleware" value="Apache Tomcat" />
         </div>
 
         {/* ─── Soft Skills ─── */}
