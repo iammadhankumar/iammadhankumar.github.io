@@ -41,7 +41,6 @@ function About() {
         <p>Hands‑on experience with RESTful Web Services development and integration.</p>
         <p>Skilled in using JUnit to create effective unit tests that ensure code reliability and quality.</p>
         <p>Familiar with Maven for build management and Log4j for logging configurations.</p>
-        <p>Involved in different payment gateway integrations for e-commerce applications.</p>
         <p>Worked on modernizing legacy applications by migrating to newer frameworks and optimizing system performance.</p>
         <p>Well-versed in implementing authentication and authorization using Spring Security and JWT.</p>
         <p>Experienced in building and managing backend services on AWS using EC2 for running applications, S3 for storing files, and RDS for handling databases.</p>
