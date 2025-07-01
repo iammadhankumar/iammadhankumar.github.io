@@ -55,6 +55,14 @@ const blogPosts = [
     description: 'Java vs Kotlin',
     url: 'https://dev.to/iammadhankumar/java-vs-kotlin-in-2025-which-one-to-choose-and-why-1nhb',
   },
+  {
+    id: 8,
+    title: 'Modern Java Features (Java 21+) Explained with Examples',
+    date: 'July 1, 2025',
+    readTime: '3 min read',
+    description: 'Embrace simplicity, clarity, and power in your Java code',
+    url: 'https://dev.to/iammadhankumar/modern-java-features-java-21-explained-with-examples-ko3',
+  },
   // Add more blog objects with readTime...
 ];
 
