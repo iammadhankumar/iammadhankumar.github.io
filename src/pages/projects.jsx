@@ -187,14 +187,14 @@ function ProjectCard({ project, index }) {
             {open && (
               <div
                 id={detailsId}
-                className="mt-4 space-y-3 text-sm leading-relaxed  text-left md:text-justify md:[text-wrap:balance] text-zinc-700 dark:text-zinc-300"
+                className="mt-4 space-y-3 text-sm leading-relaxed  text-left md:[text-wrap:balance] text-zinc-700 dark:text-zinc-300"
               >
                 <p>
                   <strong>Tech Stack :</strong> {project.techStack.join(", ")}
                 </p>
                 <div>
                   <p className="font-bold">Responsibilities :</p>
-                  <ul className="mt-1 list-disc list-outside pl-6 marker:text-black dark:marker:text-white space-y-1">
+                  <ul className="mt-1 list-disc list-outside pl-6 marker:text-black dark:marker:text-white space-y-1 text-left">
                     {project.responsibilities.map((r, i) => (
                       <li key={`${project.id}-${i}`}>{r}</li>
                     ))}
