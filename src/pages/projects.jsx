@@ -95,7 +95,7 @@ const projects = [
     domain: "Mining",
     techStack: ["Java Servlet", "React", "MongoDB", "Microsoft SQL Server", "PostgreSQL"],
     description:
-      "ESG OneMap is a web application designed to manage and visualize mining sites and related widgets through interactive maps and dashboards. It helps users monitor site data, configurations, and environmental metrics in one place. The application supports multiple databases, including MongoDB, SQL Server, and PostgreSQL, for flexible data handling. A dedicated admin panel allows authorized users to control site and widget settings efficiently. The project involved enhancing graphical view features for better data visualization. It also included migrating legacy servlet code to Spring Boot to improve performance, maintainability, and scalability.",
+      "ESG OneMap is a web application designed to manage and visualize mining sites and widgets through interactive maps and dashboards. It helps users monitor the site data, configurations, and environmental metrics in one place. The application supports multiple databases, including MongoDB, SQL Server, and PostgreSQL, for flexible data handling. A dedicated admin panel allows authorized users to control site and widget settings efficiently. The project involved enhancing graphical view features for better data visualization. It also included migrating legacy servlet code to Spring Boot to improve performance, maintainability, and scalability.",
     responsibilities: [
       "Developed and updated Java Servlet APIs and JDBC for managing mining site data and widget configurations.",
       "Contributed to graphical view features, handling backend logic to support interactive data visualization.",
@@ -148,11 +148,11 @@ function ProjectCard({ project, index }) {
             <div className="min-h-[6.5rem]">
               <p
                 ref={descRef}
-                className={`mt-4 text-sm sm:text-base leading-relaxed
-                text-left md:text-justify md:[text-wrap:balance] 
-                text-zinc-700 dark:text-zinc-300 ${ 
+                 className={`mt-4 text-sm sm:text-base leading-relaxed
+                 text-left text-pretty
+                 text-zinc-700 dark:text-zinc-300 ${
                 !fullDesc && isTruncated ? "line-clamp-4" : ""
-               }`}
+                }`}
               >
                 {project.description}
               </p>
@@ -187,7 +187,7 @@ function ProjectCard({ project, index }) {
             {open && (
               <div
                 id={detailsId}
-                className="mt-4 space-y-3 text-sm leading-relaxed  text-left md:[text-wrap:balance] text-zinc-700 dark:text-zinc-300"
+                className="mt-4 space-y-3 text-sm leading-relaxed text-left text-pretty text-zinc-700 dark:text-zinc-300"
               >
                 <p>
                   <strong>Tech Stack :</strong> {project.techStack.join(", ")}
