@@ -71,6 +71,14 @@ const blogPosts = [
     description: 'Unlocking the Power of Spring Cloud for Modern Microservices Development',
     url: 'https://dev.to/iammadhankumar/effective-microservices-with-spring-cloud-2lcj',
   },
+  {
+    id: 10,
+    title: 'Exception Handling Best Practices in Java',
+    date: 'July 19, 2025',
+    readTime: '3 min read',
+    description: 'Mastering Checked and Unchecked Exceptions, Custom Classes, and Avoiding Common Pitfalls',
+    url: 'https://dev.to/iammadhankumar/exception-handling-best-practices-in-java-15l7',
+  },
   // Add more blog objects with readTime...
 ];
 
