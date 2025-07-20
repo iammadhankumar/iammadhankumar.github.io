@@ -10,6 +10,8 @@ import Blog from "./pages/blog";
 import Contact from "./pages/contact";
 import Store from "./pages/store";
 import Projects from "./pages/projects";
+import Footer from './components/Footer';
+
 
 
 import { ThemeProvider } from "./components/ThemeContext";
@@ -78,7 +80,7 @@ function ThemedLayout() {
       </div>
 
       {/* Main content */}
-      <div className="md:ml-64 h-screen flex flex-col overflow-hidden">
+      <div className="md:ml-64 min-h-screen flex flex-col overflow-hidden">
         {/* Top bar with hamburger and theme toggle */}
         <div className="flex items-center justify-end p-4 shadow md:shadow-none space-x-4">
 
@@ -111,6 +113,7 @@ function ThemedLayout() {
             <Route path="/projects" element={<Projects />} />
           </Routes>
         </main>
+        <Footer />
       </div>
     </div>
   );

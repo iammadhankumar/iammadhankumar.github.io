@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import blogPosts from '../data/blogs';
 
 const POSTS_PER_PAGE = 5;
@@ -17,6 +17,12 @@ const Blog = () => {
   const totalPages   = Math.ceil(reversedPosts.length / POSTS_PER_PAGE);
   const startIndex   = (currentPage - 1) * POSTS_PER_PAGE;
   const currentPosts = reversedPosts.slice(startIndex, startIndex + POSTS_PER_PAGE);
+
+   // Scroll to top on mount AND page change
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [currentPage]);
+
 
   return (
     <div className="px-6 py-10 max-w-3xl mx-auto text-gray-900 dark:text-gray-100">
