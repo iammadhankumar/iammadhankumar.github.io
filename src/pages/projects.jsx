@@ -1,6 +1,7 @@
 import React, {
   useId,
   useState,
+  useEffect,
   useRef,
   useLayoutEffect,
   memo,
@@ -211,6 +212,11 @@ function ProjectCard({ project, index }) {
 
 /* ---------- Page component ---------- */
 export default function ProjectsPage() {
+
+  // Scroll to top on mount AND page change
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <section className="relative py-10 sm:py-14 lg:py-16 bg-transparent overflow-hidden">
       <header className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
