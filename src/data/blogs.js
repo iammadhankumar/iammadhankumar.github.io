@@ -79,6 +79,14 @@ const blogPosts = [
     description: 'Mastering Checked and Unchecked Exceptions, Custom Classes, and Avoiding Common Pitfalls',
     url: 'https://dev.to/iammadhankumar/exception-handling-best-practices-in-java-15l7',
   },
+  {
+    id: 11,
+    title: 'Why Java is Still a Top Backend Language in the AI Era',
+    date: 'July 27, 2025',
+    readTime: '4 min read',
+    description: 'Explore how Java remains a powerful and reliable choice for backend development in modern AI-powered applications',
+    url: 'https://dev.to/iammadhankumar/why-java-is-still-a-top-backend-language-in-the-ai-era-cdm',
+  },
   // Add more blog objects with readTime...
 ];
 

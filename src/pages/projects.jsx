@@ -123,7 +123,7 @@ function ProjectCard({ project, index }) {
       getComputedStyle(descRef.current).lineHeight
     );
     const lines = Math.round(descRef.current.scrollHeight / lineHeight);
-    setIsTruncated(lines > 4);
+    setIsTruncated(lines > 6);
   }, [fullDesc]);
 
   return (
@@ -152,7 +152,7 @@ function ProjectCard({ project, index }) {
                  className={`mt-4 text-sm sm:text-base leading-relaxed
                  text-left text-pretty
                  text-zinc-700 dark:text-zinc-300 ${
-                !fullDesc && isTruncated ? "line-clamp-4" : ""
+                !fullDesc && isTruncated ? "line-clamp-6" : ""
                 }`}
               >
                 {project.description}
