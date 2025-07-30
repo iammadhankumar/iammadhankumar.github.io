@@ -87,6 +87,14 @@ const blogPosts = [
     description: 'Explore how Java remains a powerful and reliable choice for backend development in modern AI-powered applications',
     url: 'https://dev.to/iammadhankumar/why-java-is-still-a-top-backend-language-in-the-ai-era-cdm',
   },
+  {
+    id: 12,
+    title: 'Common Java Mistakes Developers Make',
+    date: 'July 31, 2025',
+    readTime: '7 min read',
+    description: 'Discover the most frequent Java errors with simple explanations, practical code examples, and tips to improve your code quality',
+    url: 'https://dev.to/iammadhankumar/common-java-mistakes-developers-make-2feo',
+  },
   // Add more blog objects with readTime...
 ];
 

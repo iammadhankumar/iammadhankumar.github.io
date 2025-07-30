@@ -32,7 +32,7 @@ function About() {
           I’m a passionate Software Engineer with over 6+ years of experience in designing, developing, and deploying scalable web applications and backend systems. I specialize in building scalable solutions using Java, Spring Boot, Hibernate, and Angular, along with hands‑on experience in cloud‑based deployments on AWS.</p>
         {/* ─── Professional Experience ─── */}
         <h2 className="section-h2">Professional Experience</h2>
-        <p>Software Engineer with hands-on experience in designing, developing, and deploying scalable web and mobile applications. Experienced in full-stack development with deep knowledge of Java and modern web frameworks.</p>
+        <p className="!mt-1">Software Engineer with hands-on experience in designing, developing, and deploying scalable web and mobile applications. Experienced in full-stack development with deep knowledge of Java and modern web frameworks.</p>
         <p>Proficient in Core Java with solid understanding of Collections, Multithreading, and Object‑Oriented Programming concepts.</p>
         <p>Experienced in Java technologies including JDBC, JPA, and ORM frameworks.</p>
         <p>Strong expertise in developing applications using Spring Boot and Spring MVC frameworks.</p>
@@ -49,7 +49,7 @@ function About() {
 
         {/* ─── Technical Skills ─── */}
         <h2 className="section-h2">Technical Skills</h2>
-        <div className="space-y-2">
+        <div className="space-y-2 !mt-1">
           <Skill label="Languages" value="Java, Python, JavaScript, TypeScript" />
           <Skill label="Frameworks" value="Spring Boot, Hibernate, Servlet, Angular, React(Moderate), Python‑Flask" />
           <Skill label="Databases" value="MySQL, PostgreSQL, Microsoft SQL, MongoDB" />
@@ -63,7 +63,7 @@ function About() {
 
         {/* ─── Soft Skills ─── */}
         <h2 className="section-h2">Soft Skills</h2>
-        <div className="space-y-2">
+        <div className="space-y-2 !mt-1">
           <Skill label="Problem‑Solving" value="I enjoy breaking down complex problems and finding simple, effective solutions." />
           <Skill label="Team Collaboration" value="I work well with others and believe that the best results come from strong teamwork and shared goals." />
           <Skill label="Communication" value="I'm comfortable expressing ideas clearly, whether in writing or conversation, and I value open, honest communication." />
@@ -72,18 +72,18 @@ function About() {
 
         {/* ─── Education ─── */}
         <h2 className="section-h2">Education</h2>
-        <p>
+        <p className="!mt-1">
           Bachelor of Engineering in Computer Science <br />
           Graduated – 2018
         </p>
 
         {/* ─── My Approach ─── */}
         <h2 className="section-h2">My Approach</h2>
-        <p>I focus on writing clean, maintainable code with attention to clarity, performance, and teamwork. I'm committed to continuous learning and enjoy solving complex problems while delivering meaningful outcomes.</p>
+        <p className="!mt-1">I focus on writing clean, maintainable code with attention to clarity, performance, and teamwork. I'm committed to continuous learning and enjoy solving complex problems while delivering meaningful outcomes.</p>
 
         {/* ─── Hobbies ─── */}
         <h2 className="section-h2">Hobbies</h2>
-        <ul className="list-disc pl-5 space-y-1">
+        <ul className="list-disc pl-5 space-y-1 !mt-1">
           <li>Watching movies</li>
           <li>Traveling and nature walks</li>
           <li>Playing casual games</li>
@@ -110,7 +110,7 @@ function About() {
 }
 
 /* Reusable two‑line skill row */
-const Skill = ({ label, value }) => (
+const Skill = ({ label, value}) => (
   <p>
     <span className="font-semibold">{label}:</span> {value}
   </p>
