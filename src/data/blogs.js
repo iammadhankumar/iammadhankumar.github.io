@@ -95,6 +95,14 @@ const blogPosts = [
     description: 'Discover the most frequent Java errors with simple explanations, practical code examples, and tips to improve your code quality',
     url: 'https://dev.to/iammadhankumar/common-java-mistakes-developers-make-2feo',
   },
+  {
+    id: 13,
+    title: 'Reactive Programming in Java',
+    date: 'July 31, 2025',
+    readTime: '7 min read',
+    description: 'Explore reactive programming before diving into implementation',
+    url: 'https://dev.to/iammadhankumar/reactive-programming-in-java-231e',
+  },
   // Add more blog objects with readTime...
 ];
 
