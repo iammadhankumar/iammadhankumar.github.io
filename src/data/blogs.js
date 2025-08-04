@@ -98,10 +98,10 @@ const blogPosts = [
   {
     id: 13,
     title: 'Reactive Programming in Java',
-    date: 'July 31, 2025',
+    date: 'Aug 04, 2025',
     readTime: '7 min read',
     description: 'Explore reactive programming before diving into implementation',
-    url: 'https://dev.to/iammadhankumar/reactive-programming-in-java-231e',
+    url: 'https://dev.to/iammadhankumar/reactive-programming-in-java-4adn',
   },
   // Add more blog objects with readTime...
 ];
