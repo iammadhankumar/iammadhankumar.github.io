@@ -103,6 +103,14 @@ const blogPosts = [
     description: 'Explore reactive programming before diving into implementation',
     url: 'https://dev.to/iammadhankumar/reactive-programming-in-java-4adn',
   },
+  {
+    id: 14,
+    title: 'JUnit and Mockito Best Practices for Unit Testing in Java',
+    date: 'Aug 09, 2025',
+    readTime: '8 min read',
+    description: 'JUnit and Mockito Best Practices',
+    url: 'https://dev.to/iammadhankumar/junit-and-mockito-best-practices-for-unit-testing-in-java-4icb',
+  },
   // Add more blog objects with readTime...
 ];
 
