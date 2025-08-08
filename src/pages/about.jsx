@@ -85,10 +85,10 @@ function About() {
         <h2 className="section-h2">Hobbies</h2>
         <ul className="list-disc pl-5 space-y-1 !mt-1">
           <li>Watching movies</li>
-          <li>Traveling and nature walks</li>
+          <li>Traveling</li>
           <li>Playing casual games</li>
           <li>Surfing Internet</li>
-          <li>Reading blogs</li>
+          <li>Reading & Writing blogs</li>
           <li>Problem solving and coding challenges</li>
         </ul>
       </article>
