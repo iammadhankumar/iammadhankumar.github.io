@@ -111,6 +111,14 @@ const blogPosts = [
     description: 'JUnit and Mockito Best Practices',
     url: 'https://dev.to/iammadhankumar/junit-and-mockito-best-practices-for-unit-testing-in-java-4icb',
   },
+  {
+    id: 15,
+    title: 'Build Mini Framework Using Java Reflection',
+    date: 'Aug 14, 2025',
+    readTime: '5 min read',
+    description: 'Mastering reflection while crafting your own lightweight framwork',
+    url: 'https://dev.to/iammadhankumar/build-mini-framework-using-java-reflection-21lm',
+  },
   // Add more blog objects with readTime...
 ];
 
